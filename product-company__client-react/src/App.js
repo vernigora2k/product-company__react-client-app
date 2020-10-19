@@ -1,7 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import {  } from './Redux/actions' 
+import SingIn from './SingIn/SingIn'
+import CatalogItems from './CatalogItems/CatalogItems'
+import IdItem from './IdItem/IdItem'
+// import {  } from './Redux/actions' 
 
 function App() {
   return (
