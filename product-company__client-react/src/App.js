@@ -4,9 +4,16 @@ import { bindActionCreators } from 'redux'
 import SingIn from './SingIn/SingIn'
 import CatalogItems from './CatalogItems/CatalogItems'
 import IdItem from './IdItem/IdItem'
+import { apiRequest, body } from './js/apiClient'
+import { URLlogin } from './js/config';
 // import {  } from './Redux/actions' 
 
 function App() {
+
+  // apiRequest('POST', URLlogin, body)
+  //   .then(data => console.log(data))
+  //   .catch(err => console.log(err))
+
   return (
     <div className="App">
       <header className="App-header">
