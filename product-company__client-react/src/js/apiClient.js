@@ -51,7 +51,7 @@ export function apiRequest(method, url, urlencoded = null) {
       };
 
     return fetch(url, requestOptions)
-        .then(response => {return response.json()})
+        .then(response => {return response.text()})
         .catch(error => console.log('error', error))
 }       
 
