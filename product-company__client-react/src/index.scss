@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1360px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App {
+    flex-direction: column;
+    // justify-content: space-around;
+    height: 100%;
+}
+
+.App-header {
+    height: 80px;
+    background-color: lightseagreen;
+}
+
+.App-main {
+    flex: 1 0 auto;
+}
+
+.App-footer {
+    flex: 0 0 auto;
+    height: 80px;
+    background-color: lightseagreen;
+}

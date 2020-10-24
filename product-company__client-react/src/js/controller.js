@@ -1,4 +1,4 @@
-import { urlCatalogItems, urlLogin } from './config'
+import { urlCatalogItems, urlLogin, urlLogout } from './config'
 const { apiRequest } = require("./apiClient");
 
 
@@ -16,7 +16,18 @@ export function getProductItems() {
     apiRequest('GET', urlCatalogItems)
         .then(data => console.log(data))
         .then(err => console.log(err))
+    }
+    
+export function logout() {
+    apiRequest('GET', urlLogout)
+        .then(data => console.log(data))
+        .then(err => console.log(err))
+    
 }
 
-singIn('user2@gmail.com', '2222')
+// singIn('user2@gmail.com', '2222')
+logout()
 getProductItems()
+singIn('user2@gmail.com', '2222')
+// setTimeout(getProductItems(), 1000)
+// getProductItems()

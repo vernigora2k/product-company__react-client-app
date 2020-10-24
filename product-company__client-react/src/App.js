@@ -11,28 +11,28 @@ import { singIn } from './js/controller'
 
 function App() {
 
-  // apiRequest('POST', URLlogin, body)
-  //   .then(data => console.log(data))
-  //   .catch(err => console.log(err))
+  
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App flex">
+      <header className="App-header flex">
         <div className="header__logo">
           <span>Логотип</span>
         </div>
-        <div className="header__menu">
+        <div className="header__menu flex">
           <div className="header__title">
-            <span>Продукция</span>
+            <span className="title-production">Продукция</span>
+            <a className="header__login">Войти в аккаунт</a>
           </div>
-          <div className="header__sing-in">
-            <a className="header__sing-in-link">
-              Войти в аккаунт
+          <div className="header__logout">
+            <a className="header__logout-link">
+              Выйти из аккаунта
             </a>
           </div>
         </div>
       </header>
       <main className="App-main">
+      kjhkjh
         <SingIn/>
         <CatalogItems/>
         <IdItem/>
