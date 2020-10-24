@@ -6,6 +6,7 @@ import CatalogItems from './CatalogItems/CatalogItems'
 import IdItem from './IdItem/IdItem'
 import { apiRequest, body } from './js/apiClient'
 import { URLlogin } from './js/config';
+import { singIn } from './js/controller'
 // import {  } from './Redux/actions' 
 
 function App() {

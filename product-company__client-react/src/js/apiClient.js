@@ -31,15 +31,8 @@
 //     .catch(err => console.log(err))
 
 
-import { urlBase } from './config'
-
 const headers = new Headers()
 headers.append("Content-Type", "application/x-www-form-urlencoded")
-// headers.append("Cookie", "connect.sid=s%3AgIlbPA5a3lXPBP6ZKZYDG6rmCl5Mo7ab.7QFHCsiTgjqDA7qXd%2BK8UWKOyq7ElysnCoK7KDqGb6k")
-
-const urlencoded = new URLSearchParams()
-urlencoded.append("email", "user2@gmail.com");
-urlencoded.append("password", "2222");
 
 export function apiRequest(method, url, urlencoded = null) {
     const requestOptions = {
@@ -51,10 +44,6 @@ export function apiRequest(method, url, urlencoded = null) {
       };
 
     return fetch(url, requestOptions)
-        .then(response => {return response.text()})
+        .then(response => {return response.json()})
         .catch(error => console.log('error', error))
 }       
-
-apiRequest('POST', urlBase, urlencoded)
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
