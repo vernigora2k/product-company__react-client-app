@@ -9,7 +9,6 @@ html {
 
 body {
     max-width: 1360px;
-    height: 100%;
     margin: 0;
     padding: 0;
     color: white;
@@ -23,7 +22,7 @@ body {
 .App {
     flex-direction: column;
     // justify-content: space-around;
-    height: 100%;
+    height: 100vh;
 }
 
 .App-header {
