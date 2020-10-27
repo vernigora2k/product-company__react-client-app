@@ -7,6 +7,12 @@ html {
     box-sizing: inherit;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
 body {
     max-width: 1360px;
     margin: 0;
@@ -26,7 +32,7 @@ body {
 }
 
 .App-header {
-    height: 80px;
+    height: 65px;
     background-color: lightseagreen;
 }
 
@@ -36,6 +42,6 @@ body {
 
 .App-footer {
     flex: 0 0 auto;
-    height: 80px;
+    height: 65px;
     background-color: lightseagreen;
 }

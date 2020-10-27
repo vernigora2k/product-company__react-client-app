@@ -16,18 +16,20 @@ function App() {
   return (
     <div className="App flex">
       <header className="App-header flex">
-        <div className="header__logo">
-          <span>Логотип</span>
-        </div>
-        <div className="header__menu flex">
-          <div className="header__title">
-            <span className="title-production">Продукция</span>
-            <a className="header__login">Войти в аккаунт</a>
+        <div className="wrapper flex">
+          <div className="header__logo">
+            <span>Логотип</span>
           </div>
-          <div className="header__logout">
-            <a className="header__logout-link">
-              Выйти из аккаунта
-            </a>
+          <div className="header__menu flex">
+            <div className="header__title">
+              <span className="title-production">Продукция</span>
+              <a className="header__login">Войти в аккаунт</a>
+            </div>
+            <div className="header__logout">
+              <a className="header__logout-link">
+                Выйти из аккаунта
+              </a>
+            </div>
           </div>
         </div>
       </header>
